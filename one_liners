@@ -1,0 +1,2 @@
+ls -l | perl -lnaF'\x20' -e '$, = ";"; if ($#F > 8) { $F[8] .= " ".$F[9]; pop @F }; print @F ' > output
+cat output | perl -lnaF';' -e 'if ($F[4] >= 1048576) { print $F[8]; $count++ } }{ $.--; print "$.  $count" '

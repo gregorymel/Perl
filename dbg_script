@@ -1,0 +1,7 @@
+l
+b 9 $. == 2
+print "Enter two lines:"
+c
+print Dumper(@AoA)
+w @AoA
+n
